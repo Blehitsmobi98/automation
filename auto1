@@ -1,0 +1,22 @@
+import java.util.*;  
+public class git 
+{
+	public static void main(String []args) {
+		
+		Scanner in= new Scanner(System.in); 
+		System.out.print("Enter your full name: ");  
+		String fullname= in.nextLine();      
+		 int len = fullname.length();
+		 
+		 System.out.print(fullname.charAt(0) + ".");
+	        for (int i = 1; i < len; i++) {
+	            char ch1 = fullname.charAt(i);
+	            if (ch1 == ' ' ) {
+	                char ch2 = fullname.charAt(i + 1);
+	                System.out.print(ch2 + " ");
+		
+           }
+	           
+	    }
+	}
+}
